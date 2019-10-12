@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+$items-per-row: 4;
+$items-margin: 15px;
+
+.our-projects {
+  text-align: center;
+}
+
+.our-projects__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: #{38px - $items-margin} -#{$items-margin} -#{$items-margin};
+}
+
+.our-projects__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 255px;
+  margin: $items-margin;
+
+}
+
+.our-projects__item-img {
+  display: block;
+  width: 100%;
+}
+
+.our-projects__item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: rgba($color-firm1, 0.75);
+  color: $color-firm2;
+  transition: opacity $animation-time;
+  opacity: 0;
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+
+}
+
+.our-projects__item-title {
+  font-weight: 400;
+}
+
+
+.our-projects__item-description {
+  margin-top: 15px;
+}
+
+.our-projects_item-btn {
+  margin: 30px auto 0;
+  min-width: 0px;
+}
