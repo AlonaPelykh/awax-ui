@@ -15,13 +15,12 @@ $items-margin: 15px;
 }
 
 .our-projects__item {
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   align-items: center;
   flex-basis: 255px;
   margin: $items-margin;
-
 }
 
 .our-projects__item-img {
@@ -51,7 +50,6 @@ $items-margin: 15px;
   &:active {
     opacity: 0.9;
   }
-
 }
 
 .our-projects__item-title {
