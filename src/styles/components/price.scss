@@ -11,7 +11,7 @@ $items-margin: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: calc(45px - #{$items-margin}) -#{$items-margin} -#{$items-margin};
+  margin: calc(45px - #{$items-margin}) -#{$items-margin} -#{$items-margin}; // TODO: Simplify this line
 }
 
 .price__item {
